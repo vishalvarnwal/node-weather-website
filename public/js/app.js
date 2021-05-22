@@ -1,16 +1,16 @@
-console.log("client side javascript file is loaded")
-
-//fetch is a browser based API and used only in client side
-//fetch allows us to fetch data from URL and then is a promise of fetch whihc allows us to do something with fetch data (argument is response)
-// fetch("http://localhost:3000/weather?address=koderma").then(response =>{
-//     response.json().then(data => {           //response.json - changes the JSON data into javascript object format  
-//         if(data.error){
-//             return console.log(data.error)
-//         }
-//         console.log(data.placeName)
-//         console.log(data.forecast)
-//     })
-// })
+/*
+fetch is a browser based API and used only in client side
+fetch allows us to fetch data from URL and then is a promise of fetch whihc allows us to do something with fetch data (argument is response)
+fetch("http://localhost:3000/weather?address=koderma").then(response =>{
+    response.json().then(data => {           //response.json - changes the JSON data into javascript object format  
+        if(data.error){
+            return console.log(data.error)
+        }
+        console.log(data.placeName)
+        console.log(data.forecast)
+    })
+})
+*/
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')

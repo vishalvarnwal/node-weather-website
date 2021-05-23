@@ -23,8 +23,8 @@ const forecast = (latitude, longitude, callback) => {
         }else if(body.error){
             callback('Unable to find the location. Please try with another search!', undefined)
         }else{
-            callback(undefined, body.current.weather_descriptions[0]+". it is currnetly " + 
-            body.current.temperature + " degree Fahrenheit in record but it feels like " + body.current.feelslike + " degree Fahrenheit out")
+            callback(undefined, body.current.weather_descriptions[0]+"; it is currnetly " + 
+            body.current.temperature + " degree Fahrenheit in record but it feels like " + body.current.feelslike + " degree Fahrenheit out. The humidity is " + body.current.humidity + "%.")
         }
     })
     
